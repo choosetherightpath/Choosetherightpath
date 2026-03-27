@@ -1,7 +1,28 @@
-@media (max-width: 1200px) {
-    /* Existing styles remain unchanged */
-}
-
-@media (min-width: 1201px) {
-    background-image: url('desktop_v2.png');
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+    <style>
+        /* Style for desktop */
+        @media only screen and (min-width: 768px) {
+            body {
+                background-image: url('desktop_v2.png');
+                background-size: cover;
+            }
+        }
+        /* Style for mobile */
+        @media only screen and (max-width: 767px) {
+            body {
+                background-image: url('mobile_v2.png');
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Your Website!</h1>
+    <p>This is a sample HTML file.</p>
+</body>
+</html>
