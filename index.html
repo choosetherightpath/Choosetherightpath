@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose The Right Path</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: black; }
+        .bg { width: 100%; height: 100%; background-position: center; background-repeat: no-repeat; background-size: contain; }
+        
+        /* This looks for the PC version if the screen is Wide */
+        @media (min-width: 768px) {
+            .bg { background-image: url('index.png'); }
+        }
+        
+        /* This looks for the Mobile version if the screen is Tall */
+        @media (max-width: 767px) {
+            .bg { background-image: url('mobile.png'); }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+</body>
+</html>
