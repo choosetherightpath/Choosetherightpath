@@ -5,18 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    html, body {
-      margin: 0;
-      height: 100%;
-    }
+html, body {
+  margin: 0;
+  height: 100%;
+}
 
-    body {
-      background-image: url('bg.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-color: black;
-    }
+/* Desktop */
+body {
+  background-image: url('bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    background-image: url('mobile.jpg');
+    background-size: cover;
+  }
+}
   </style>
 </head>
 
